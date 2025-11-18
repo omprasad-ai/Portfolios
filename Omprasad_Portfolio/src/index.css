@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Floating Icons Animation */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.floating-icon {
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+/* Glow Pulse for Avatar */
+@keyframes glowPulse {
+  0% { filter: drop-shadow(0 0 20px #22c55e); }
+  50% { filter: drop-shadow(0 0 45px #22c55e); }
+  100% { filter: drop-shadow(0 0 20px #22c55e); }
+}
+
+.glow {
+  animation: glowPulse 2.8s infinite;
+}
+
+/* Fade + Slide on Scroll */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 1.1s forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project Card Hover */
+.card-hover {
+  transition: 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 0 25px #22c55e55;
+}
+
+/* Scroll To Top Bounce */
+@keyframes bounceUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.scroll-top-btn {
+  animation: bounceUp 2s infinite;
+}
