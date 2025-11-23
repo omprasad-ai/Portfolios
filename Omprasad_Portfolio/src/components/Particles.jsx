@@ -1,7 +1,6 @@
 import React from "react";
 
 const Particles = () => {
-  // number of particles floating
   const dots = new Array(40).fill(0);
 
   return (

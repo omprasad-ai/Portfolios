@@ -18,7 +18,6 @@ const Navbar = () => {
 
       <button onClick={() => setOpen(true)} className="md:hidden text-3xl">☰</button>
 
-      {/* Mobile Menu */}
       <div className={`fixed top-0 right-0 h-full w-64 bg-black/90 backdrop-blur-xl p-6 transition-transform ${open ? "translate-x-0" : "translate-x-full"}`}>
         <button onClick={() => setOpen(false)} className="text-3xl text-white">×</button>
 

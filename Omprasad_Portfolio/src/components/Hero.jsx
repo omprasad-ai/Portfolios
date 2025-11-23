@@ -7,13 +7,13 @@ const Hero = () => {
       className="min-h-screen w-full bg-black text-white flex flex-col md:flex-row justify-center items-center px-10 pt-32 relative overflow-hidden"
     >
       {/* Green glowing background */}
-      <div className="absolute w-[420px] h-[420px] bg-green-500/20 blur-[150px] rounded-full"></div>
+      <div className="section-glow"></div>
 
       {/* Floating Icons */}
-      <span className="floating-icon absolute top-20 left-16 text-yellow-400 text-3xl">JS</span>
-      <span className="floating-icon absolute top-40 right-14 text-green-400 text-4xl">⚛</span>
-      <span className="floating-icon absolute bottom-32 right-20 text-orange-400 text-3xl">HTML</span>
-      <span className="floating-icon absolute bottom-20 left-20 text-blue-400 text-4xl">🐍</span>
+      <span className="floating-icon text-yellow-400 text-3xl top-20 left-16">JS</span>
+      <span className="floating-icon text-green-400 text-4xl top-40 right-14">⚛</span>
+      <span className="floating-icon text-orange-400 text-3xl bottom-32 right-20">HTML</span>
+      <span className="floating-icon text-blue-400 text-4xl bottom-20 left-20">🐍</span>
 
       {/* LEFT TEXT */}
       <div className="flex-1 fade-slide">
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* RIGHT IMAGE (ADD YOUR AVATAR HERE) */}
+      {/* RIGHT IMAGE */}
       <div className="flex-1 flex justify-center mt-10 md:mt-0">
         <img
           src="/assets/hero-avatar.png"

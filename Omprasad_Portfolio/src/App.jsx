@@ -9,13 +9,13 @@ import Particles from "./components/Particles";
 function App() {
   return (
     <>
+      <Particles />
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Footer />
-      <Particles/>
     </>
   );
 }

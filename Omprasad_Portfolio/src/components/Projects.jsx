@@ -8,7 +8,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen bg-black text-white px-10 py-24">
+    <section
+      id="projects"
+      className="min-h-screen bg-black text-white px-10 py-24 relative overflow-hidden"
+    >
+      <div className="section-glow"></div>
+
       <h2 className="text-4xl font-bold text-green-400 text-center mb-16">Projects</h2>
 
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto fade-slide">
